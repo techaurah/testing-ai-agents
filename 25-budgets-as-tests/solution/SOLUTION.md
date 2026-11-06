@@ -1,0 +1,3 @@
+# Solution: Budgets as tests
+
+What it buys: a hard guarantee against rambling replies, enforced before deploy rather than after a complaint. What it risks: the limit sits 2 characters above the longest legitimate reply the suite has ever produced, so any template edit, a longer name in the greeting, a new reply kind, can breach it for reasons unrelated to snappiness, and the suite starts failing on noise. Before agreeing, check the reply length distribution per kind, the longest greeting name in the fixtures, and whether 140 expresses a real product need or a round number; a budget set at the observed maximum plus headroom for names is a policy, while 140 is a tripwire.
