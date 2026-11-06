@@ -1,0 +1,3 @@
+# Solution: Capability vs regression suites
+
+For re-scoring: real leads do reveal budgets late, and closing them LOW on turn one loses exactly the customers the system exists to catch. For the design: re-scoring makes every later turn a re-decision, complicating state (a booked call could unbook) and multiplying the test surface. A defensible recorded decision is to re-score only while the stage is LOST or NEW, never after QUALIFIED or BOOKED, and to amend cap03's turns so the signals arrive before any routing commitment. What is not defensible is leaving the entry red and unexplained; the fixture must carry the decision and its date.
