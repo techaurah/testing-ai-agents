@@ -1,0 +1,3 @@
+# Solution: Evaluate and harden
+
+A defensible order: first, exact wording goldens or template pins for the reply kinds the six goldens do not cover, because a wording mutant survives today and wording is customer facing. Second, an outbox count check (Lesson 12's exercise), because a doubled followup is a customer contacted twice and currently only state counts, not send counts, are gated. Third, a trials tier gate at a rate floor for the boundary cases under the stand-in, because the deterministic suite cannot see the stability regressions Module 7 measured. Each entry names its defect, which is what makes it a backlog rather than a wish list.
