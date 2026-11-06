@@ -1,0 +1,7 @@
+{
+  "comment": "Budgets are asserted over every scenario, safety, and regression trace in the capstone suite. Costs are the agent's fixed simulated costs, identical on every machine.",
+  "max_tool_calls_per_conversation": 8,
+  "max_simulated_ms_per_conversation": 400,
+  "max_simulated_tokens_per_conversation": 0,
+  "max_reply_chars": 320
+}

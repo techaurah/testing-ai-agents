@@ -1,0 +1,408 @@
+[
+  {
+    "id": "g-s01",
+    "source_case": "s01",
+    "trace": [
+      {
+        "tool": "capture_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": "LD-001",
+        "ms": 30,
+        "tokens": 0
+      },
+      {
+        "tool": "score_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": 93,
+        "ms": 45,
+        "tokens": 0
+      },
+      {
+        "tool": "calendar_check",
+        "args": {
+          "when": "2026-11-09T10:00:00"
+        },
+        "result": true,
+        "ms": 35,
+        "tokens": 0
+      },
+      {
+        "tool": "book_appointment",
+        "args": {
+          "when": "2026-11-09T10:00:00"
+        },
+        "result": "booked",
+        "ms": 80,
+        "tokens": 0
+      },
+      {
+        "tool": "crm_write",
+        "args": {
+          "stage": "BOOKED"
+        },
+        "result": "written",
+        "ms": 60,
+        "tokens": 0
+      },
+      {
+        "tool": "send_reply",
+        "args": {
+          "kind": "booked"
+        },
+        "result": "sent",
+        "ms": 20,
+        "tokens": 0
+      }
+    ],
+    "replies": [
+      "Thanks Amara, you are booked in. We will confirm the details shortly."
+    ],
+    "score": 93,
+    "band": "HOT",
+    "stage": "BOOKED",
+    "state": {
+      "crm_records": 1,
+      "bookings": 1,
+      "outbox": 1,
+      "escalations": 0,
+      "stages": {
+        "LD-001": "BOOKED"
+      }
+    }
+  },
+  {
+    "id": "g-s05",
+    "source_case": "s05",
+    "trace": [
+      {
+        "tool": "capture_lead",
+        "args": {
+          "channel": "email"
+        },
+        "result": "LD-001",
+        "ms": 30,
+        "tokens": 0
+      },
+      {
+        "tool": "score_lead",
+        "args": {
+          "channel": "email"
+        },
+        "result": 65,
+        "ms": 45,
+        "tokens": 0
+      },
+      {
+        "tool": "crm_write",
+        "args": {
+          "stage": "QUALIFIED"
+        },
+        "result": "written",
+        "ms": 60,
+        "tokens": 0
+      },
+      {
+        "tool": "send_followup",
+        "args": {
+          "kind": "qualification"
+        },
+        "result": "sent",
+        "ms": 25,
+        "tokens": 0
+      },
+      {
+        "tool": "send_reply",
+        "args": {
+          "kind": "qualified"
+        },
+        "result": "sent",
+        "ms": 20,
+        "tokens": 0
+      }
+    ],
+    "replies": [
+      "Thanks Ella, that is helpful. A specialist will follow up with the right next step."
+    ],
+    "score": 65,
+    "band": "WARM",
+    "stage": "QUALIFIED",
+    "state": {
+      "crm_records": 1,
+      "bookings": 0,
+      "outbox": 2,
+      "escalations": 0,
+      "stages": {
+        "LD-001": "QUALIFIED"
+      }
+    }
+  },
+  {
+    "id": "g-s07",
+    "source_case": "s07",
+    "trace": [
+      {
+        "tool": "capture_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": "LD-001",
+        "ms": 30,
+        "tokens": 0
+      },
+      {
+        "tool": "score_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": 50,
+        "ms": 45,
+        "tokens": 0
+      },
+      {
+        "tool": "crm_write",
+        "args": {
+          "stage": "QUALIFIED"
+        },
+        "result": "written",
+        "ms": 60,
+        "tokens": 0
+      },
+      {
+        "tool": "send_followup",
+        "args": {
+          "kind": "nurture"
+        },
+        "result": "sent",
+        "ms": 25,
+        "tokens": 0
+      },
+      {
+        "tool": "send_reply",
+        "args": {
+          "kind": "nurture"
+        },
+        "result": "sent",
+        "ms": 20,
+        "tokens": 0
+      }
+    ],
+    "replies": [
+      "Thanks Gia, noted. We will stay in touch with useful updates and you can reach out any time."
+    ],
+    "score": 50,
+    "band": "NURTURE",
+    "stage": "QUALIFIED",
+    "state": {
+      "crm_records": 1,
+      "bookings": 0,
+      "outbox": 2,
+      "escalations": 0,
+      "stages": {
+        "LD-001": "QUALIFIED"
+      }
+    }
+  },
+  {
+    "id": "g-s13",
+    "source_case": "s13",
+    "trace": [
+      {
+        "tool": "capture_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": "LD-001",
+        "ms": 30,
+        "tokens": 0
+      },
+      {
+        "tool": "score_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": 93,
+        "ms": 45,
+        "tokens": 0
+      },
+      {
+        "tool": "calendar_check",
+        "args": {
+          "when": "2026-11-07T11:00:00"
+        },
+        "result": false,
+        "ms": 35,
+        "tokens": 0
+      },
+      {
+        "tool": "crm_write",
+        "args": {
+          "stage": "QUALIFIED"
+        },
+        "result": "written",
+        "ms": 60,
+        "tokens": 0
+      },
+      {
+        "tool": "send_reply",
+        "args": {
+          "kind": "offer_alternative"
+        },
+        "result": "sent",
+        "ms": 20,
+        "tokens": 0
+      }
+    ],
+    "replies": [
+      "Thanks Mia, that time is outside our working hours, so here is the next available slot in hours instead."
+    ],
+    "score": 93,
+    "band": "HOT",
+    "stage": "QUALIFIED",
+    "state": {
+      "crm_records": 1,
+      "bookings": 0,
+      "outbox": 1,
+      "escalations": 0,
+      "stages": {
+        "LD-001": "QUALIFIED"
+      }
+    }
+  },
+  {
+    "id": "g-s15",
+    "source_case": "s15",
+    "trace": [
+      {
+        "tool": "capture_lead",
+        "args": {
+          "channel": "email"
+        },
+        "result": "LD-001",
+        "ms": 30,
+        "tokens": 0
+      },
+      {
+        "tool": "score_lead",
+        "args": {
+          "channel": "email"
+        },
+        "result": 65,
+        "ms": 45,
+        "tokens": 0
+      },
+      {
+        "tool": "crm_write",
+        "args": {
+          "stage": "QUALIFIED"
+        },
+        "result": "written",
+        "ms": 60,
+        "tokens": 0
+      },
+      {
+        "tool": "send_followup",
+        "args": {
+          "kind": "qualification"
+        },
+        "result": "sent",
+        "ms": 25,
+        "tokens": 0
+      },
+      {
+        "tool": "send_reply",
+        "args": {
+          "kind": "qualified"
+        },
+        "result": "sent",
+        "ms": 20,
+        "tokens": 0
+      },
+      {
+        "tool": "send_reply",
+        "args": {
+          "kind": "acknowledge"
+        },
+        "result": "sent",
+        "ms": 20,
+        "tokens": 0
+      }
+    ],
+    "replies": [
+      "Thanks Ola, that is helpful. A specialist will follow up with the right next step.",
+      "Thanks Ola, noted and added to your file."
+    ],
+    "score": 65,
+    "band": "WARM",
+    "stage": "QUALIFIED",
+    "state": {
+      "crm_records": 1,
+      "bookings": 0,
+      "outbox": 3,
+      "escalations": 0,
+      "stages": {
+        "LD-001": "QUALIFIED"
+      }
+    }
+  },
+  {
+    "id": "g-sf03",
+    "source_case": "sf03",
+    "trace": [
+      {
+        "tool": "capture_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": "LD-001",
+        "ms": 30,
+        "tokens": 0
+      },
+      {
+        "tool": "score_lead",
+        "args": {
+          "channel": "whatsapp"
+        },
+        "result": 26,
+        "ms": 45,
+        "tokens": 0
+      },
+      {
+        "tool": "crm_write",
+        "args": {
+          "stage": "LOST"
+        },
+        "result": "written",
+        "ms": 60,
+        "tokens": 0
+      },
+      {
+        "tool": "send_reply",
+        "args": {
+          "kind": "closed"
+        },
+        "result": "sent",
+        "ms": 20,
+        "tokens": 0
+      }
+    ],
+    "replies": [
+      "Thanks Alba, it sounds like we are not the right fit right now. Wishing you well with the project."
+    ],
+    "score": 26,
+    "band": "LOW",
+    "stage": "LOST",
+    "state": {
+      "crm_records": 1,
+      "bookings": 0,
+      "outbox": 1,
+      "escalations": 0,
+      "stages": {
+        "LD-001": "LOST"
+      }
+    }
+  }
+]

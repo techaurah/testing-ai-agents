@@ -1,0 +1,305 @@
+[
+  {
+    "id": "r01",
+    "type": "boundary-score-100",
+    "lead": {
+      "name": "Kai Ito",
+      "channel": "whatsapp",
+      "budget": 2000,
+      "timeline_days": 7
+    },
+    "turns": [
+      "Please schedule a call to get started."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 100,
+      "band": "HOT",
+      "stage": "BOOKED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "calendar_check",
+        "book_appointment",
+        "crm_write",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 1,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r02",
+    "type": "boundary-score-80",
+    "lead": {
+      "name": "Lena Vogt",
+      "channel": "whatsapp",
+      "budget": 2100,
+      "timeline_days": 30
+    },
+    "turns": [
+      "Hello, we run a med spa and are comparing options."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 80,
+      "band": "HOT",
+      "stage": "BOOKED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "calendar_check",
+        "book_appointment",
+        "crm_write",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 1,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r03",
+    "type": "boundary-score-78",
+    "lead": {
+      "name": "Mona Haddad",
+      "channel": "whatsapp",
+      "budget": 2200,
+      "timeline_days": 60
+    },
+    "turns": [
+      "Hello, what does the service cost?"
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 78,
+      "band": "WARM",
+      "stage": "QUALIFIED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "crm_write",
+        "send_followup",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 0,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r04",
+    "type": "boundary-score-65",
+    "lead": {
+      "name": "Nils Berg",
+      "channel": "email",
+      "budget": 1200,
+      "timeline_days": 20
+    },
+    "turns": [
+      "Hello, we are a law firm exploring help with new client enquiries."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 65,
+      "band": "WARM",
+      "stage": "QUALIFIED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "crm_write",
+        "send_followup",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 0,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r05",
+    "type": "boundary-score-64",
+    "lead": {
+      "name": "Opal Reed",
+      "channel": "web",
+      "budget": 800,
+      "timeline_days": 5
+    },
+    "turns": [
+      "Hello, just researching at this point."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 64,
+      "band": "NURTURE",
+      "stage": "QUALIFIED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "crm_write",
+        "send_followup",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 0,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r06",
+    "type": "boundary-score-50",
+    "lead": {
+      "name": "Paul Ade",
+      "channel": "whatsapp"
+    },
+    "turns": [
+      "Our budget is $300 and we need something within 90 days. Can we book a call?"
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 50,
+      "band": "NURTURE",
+      "stage": "QUALIFIED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "crm_write",
+        "send_followup",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 0,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r07",
+    "type": "boundary-score-49",
+    "lead": {
+      "name": "Rin Kato",
+      "channel": "web",
+      "budget": 800,
+      "timeline_days": 60
+    },
+    "turns": [
+      "Hello, just researching options for later this year."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 49,
+      "band": "LOW",
+      "stage": "LOST",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "crm_write",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 0,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r08",
+    "type": "no-signals",
+    "lead": {
+      "name": "Sara Lind",
+      "channel": "email"
+    },
+    "turns": [
+      "Just browsing, maybe next year."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 21,
+      "band": "LOW",
+      "stage": "LOST",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "crm_write",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 0,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r09",
+    "type": "budget-k-format",
+    "lead": {
+      "name": "Theo Marchetti",
+      "channel": "instagram_dm"
+    },
+    "turns": [
+      "Hi, our budget is 1.5k and we need this within 6 days. Please schedule a call."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 90,
+      "band": "HOT",
+      "stage": "BOOKED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "calendar_check",
+        "book_appointment",
+        "crm_write",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 1,
+      "replies": 1
+    }
+  },
+  {
+    "id": "r10",
+    "type": "nurture-mid",
+    "lead": {
+      "name": "Ute Braun",
+      "channel": "email"
+    },
+    "turns": [
+      "Hello, our budget is $900 and we would need this within 60 days. Can we book a call?"
+    ],
+    "now": "2026-11-09T10:00:00",
+    "expect": {
+      "score": 60,
+      "band": "NURTURE",
+      "stage": "QUALIFIED",
+      "tools": [
+        "capture_lead",
+        "score_lead",
+        "crm_write",
+        "send_followup",
+        "send_reply"
+      ],
+      "refusals": [],
+      "escalated": false,
+      "flags": [],
+      "bookings": 0,
+      "replies": 1
+    }
+  }
+]

@@ -1,0 +1,185 @@
+[
+  {
+    "id": "cap01",
+    "type": "budget-in-words",
+    "lead": {
+      "name": "Vera Lindqvist",
+      "channel": "whatsapp"
+    },
+    "turns": [
+      "Our budget is two thousand dollars and we need this within 7 days. Can we book a call?"
+    ],
+    "now": "2026-11-09T10:00:00",
+    "assert_on": [
+      "band",
+      "stage",
+      "bookings"
+    ],
+    "expect": {
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1
+    },
+    "gap": "The parser reads digits only; a budget written in words is invisible to it.",
+    "baseline": {
+      "score": 65,
+      "band": "WARM",
+      "stage": "QUALIFIED",
+      "bookings": 0,
+      "passes": false
+    }
+  },
+  {
+    "id": "cap02",
+    "type": "non-english-inquiry",
+    "lead": {
+      "name": "Marco Ruiz",
+      "channel": "whatsapp"
+    },
+    "turns": [
+      "Hola, nuestro presupuesto es $2,500 y queremos reservar una llamada esta semana."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "assert_on": [
+      "band",
+      "stage",
+      "bookings"
+    ],
+    "expect": {
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1
+    },
+    "gap": "Intent and timeline words are English only; the booking intent in Spanish is missed.",
+    "baseline": {
+      "score": 66,
+      "band": "WARM",
+      "stage": "QUALIFIED",
+      "bookings": 0,
+      "passes": false
+    }
+  },
+  {
+    "id": "cap03",
+    "type": "late-arriving-signals",
+    "lead": {
+      "name": "Nadia Rahman",
+      "channel": "whatsapp"
+    },
+    "turns": [
+      "Hi, we run a dental clinic and are looking at automation for new patient enquiries.",
+      "Our budget is $3,000 and we need it within 14 days. Can we book a call?"
+    ],
+    "now": "2026-11-09T10:00:00",
+    "assert_on": [
+      "band",
+      "stage",
+      "bookings"
+    ],
+    "expect": {
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1
+    },
+    "gap": "The agent scores on the first turn only; decisive signals in turn two arrive after the lead is closed.",
+    "baseline": {
+      "score": 26,
+      "band": "LOW",
+      "stage": "LOST",
+      "bookings": 0,
+      "passes": false
+    }
+  },
+  {
+    "id": "cap04",
+    "type": "budget-range",
+    "lead": {
+      "name": "Omar Haddad",
+      "channel": "whatsapp"
+    },
+    "turns": [
+      "Our budget is between 1800 and 2200 dollars, we need it within 7 days, and we want to book a call."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "assert_on": [
+      "band",
+      "stage",
+      "bookings"
+    ],
+    "expect": {
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1
+    },
+    "gap": "A range is read as its first figure; routing still lands correctly here, so this case passes.",
+    "baseline": {
+      "score": 90,
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1,
+      "passes": true
+    }
+  },
+  {
+    "id": "cap05",
+    "type": "typos",
+    "lead": {
+      "name": "Pia Nilsen",
+      "channel": "whatsapp"
+    },
+    "turns": [
+      "Our budjet is $2,200, we need it asap, lets bok a call."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "assert_on": [
+      "band",
+      "stage",
+      "bookings"
+    ],
+    "expect": {
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1
+    },
+    "gap": "Typos in the money words are survived because the currency symbol still marks the context.",
+    "baseline": {
+      "score": 100,
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1,
+      "passes": true
+    }
+  },
+  {
+    "id": "cap06",
+    "type": "explicit-no-call",
+    "lead": {
+      "name": "Ravi Menon",
+      "channel": "email",
+      "budget": 2400,
+      "timeline_days": 10
+    },
+    "turns": [
+      "We do not want a call, please just email me the pricing details."
+    ],
+    "now": "2026-11-09T10:00:00",
+    "assert_on": [
+      "band",
+      "stage",
+      "bookings"
+    ],
+    "expect": {
+      "band": "HOT",
+      "stage": "QUALIFIED",
+      "bookings": 0
+    },
+    "gap": "The word call triggers booking intent even inside an explicit refusal of a call, and a HOT route books it.",
+    "baseline": {
+      "score": 88,
+      "band": "HOT",
+      "stage": "BOOKED",
+      "bookings": 1,
+      "passes": false
+    }
+  }
+]
