@@ -1,0 +1,3 @@
+# Solution: Capstone spec: the suite and its gates, fixed in advance
+
+The outcome only harness kills it: raising the WARM line to 79 re bands every WARM and NURTURE case scoring 50 to 78, changing band and often stage, which outcome assertions see directly. Among the gated cases, s04 (78, expected WARM) and r04 (65, expected WARM) both flip, and r05 (64) drops out of its band as well. The reviewer's mutant is a legitimate addition to the battery even though it is not subtle: mutation sets should mix the invisible defects with the merely plausible ones, because real regressions are usually the latter.
