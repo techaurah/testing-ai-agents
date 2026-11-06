@@ -1,0 +1,3 @@
+# Solution: Wiring the suite into CI
+
+Move the trials out of core entirely: core keeps the deterministic gated sets (fast, exact, exit code logic unchanged) and stays the merge gate. The trials become their own nightly tier next to the full tier, reporting pass rates with Wilson intervals and gating, if at all, on a rate floor agreed in advance. Each tier's claim stays clean: smoke proves the build runs, core proves the contract holds exactly, full proves budgets and goldens, and the trials tier proves measured stability at a stated confidence, instead of a slow merge gate proving nothing statistical at great length.
