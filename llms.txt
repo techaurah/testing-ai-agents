@@ -1,0 +1,49 @@
+# Testing AI Agents
+
+A free, complete course on testing AI agents deterministically first: one small agent under test, scenario fixtures, assertion styles from outcome to trajectory, state and conversation testing, safety suites for refusals, injection, and permission boundaries, regression and capability suites kept separate, statistical honesty for nondeterministic runs, budgets as tests, MCP and retrieval boundary tests, CI tiers, eval driven development, and a capstone test suite graded against gates fixed in advance, including a mutation testing gate. All runnable code is Python standard library, offline.
+
+## Lessons
+
+- Lesson 00: Course setup: what you need, and how this course works (00-course-setup/): A verified setup: Python checked, the agent and fixtures counted, and the honesty rules stated
+- Lesson 01: Why agent testing is different (01-why-agent-testing-is-different/): Four measured differences: the clock decides, outcomes live in state, many paths, unstable boundaries
+- Lesson 02: Meet the agent under test: the contract audit (02-meet-the-agent-under-test/): The written contract turned into probes: six clauses audited over 46 cases
+- Lesson 03: The deterministic twin pattern (03-the-deterministic-twin-pattern/): Fresh environments and explicit inputs: 46 of 46 cases replay byte identically
+- Lesson 04: Anatomy of a scenario (04-anatomy-of-a-scenario/): The fixture format dissected and validated: complete expectations, named gaps
+- Lesson 05: Your first scenario test: the mini harness (05-your-first-scenario-test/): The smallest honest runner, and the mutant that walks straight past it
+- Lesson 06: Exact and structural assertions (06-exact-and-structural-assertions/): Three styles, three disturbances, one measured survival table
+- Lesson 07: Property based assertions (07-property-based-assertions/): Five laws over 400 generated leads, and the mutant only the strongest law catches
+- Lesson 08: Trajectory assertions (08-trajectory-assertions/): Five ordering rules over every gated case, plus three crafted bad traces
+- Lesson 09: Prompts and templates as data (09-prompts-and-templates-as-data/): All 10 reply kinds rendered and scanned as data, no judging required
+- Lesson 10: Tool contracts (10-tool-contracts/): Eight contracts validated over 223 recorded calls, error paths included
+- Lesson 11: Parsers and extractors (11-parsers-and-extractors/): The front door pinned by hand written cases, sharp edges and all
+- Lesson 12: State testing: the CRM is the outcome (12-state-testing/): State graded over narration, and the idempotency mutant only state can see
+- Lesson 13: Multi-turn conversations (13-multi-turn-conversations/): Turn, conversation, memory, and termination levels, nine checks
+- Lesson 14: Golden trajectories (14-golden-trajectories/): Six frozen runs, exact replay, and a drift report a human can judge
+- Lesson 15: Refusal tests (15-refusal-tests/): Both halves: refusals that fire, and zero false refusals on the benign set
+- Lesson 16: Injection tests (16-injection-tests/): Scores from signals never claims, attempts flagged, cleaned controls compared
+- Lesson 17: Permission boundaries (17-permission-boundaries/): Leak scans, record isolation, and auditable escalation reasons
+- Lesson 18: Regression suites (18-regression-suites/): The fossil record: boundary scores pinned, gated at 100 percent
+- Lesson 19: Error analysis: from red to taxonomy (19-error-analysis/): Five defects at once, classified safety first, and the fix order the table dictates
+- Lesson 20: Capability vs regression suites (20-capability-vs-regression/): Two species: gated sets at 46 of 46, capability at an honest 2 of 6
+- Lesson 21: The seeded stand-in (21-the-seeded-stand-in/): Labelled wobble, seeded and reproducible: no watched case is fully stable
+- Lesson 22: pass@k and pass^k (22-pass-at-k-and-pass-pow-k/): Two honest rates from one measured p, an order of magnitude apart
+- Lesson 23: Flaky tests: find them, classify them (23-flaky-tests/): 15 of 24 scenarios flake through two channels; the response differs by class
+- Lesson 24: How many runs are enough (24-how-many-runs-are-enough/): Wilson intervals and the failure catching rule: 59 runs for a 5 percent defect
+- Lesson 25: Budgets as tests (25-budgets-as-tests/): Costs gated per conversation, and the retry storm only a budget catches
+- Lesson 26: Testing at the boundaries: MCP tools and retrieval (26-testing-at-the-boundaries/): A JSON-RPC tool contract grid, and retrieval recall at 3 with one honest miss
+- Lesson 27: Wiring the suite into CI (27-wiring-the-suite-into-ci/): Smoke, core, and full tiers, with the gate proven to fail on demand
+- Lesson 28: Eval driven development (28-eval-driven-development/): One loop in the open: capability 2 of 6 to 3 of 6, gated sets unmoved
+- Lesson 29: Capstone spec: the suite and its gates, fixed in advance (29-capstone-spec/): Seven gates and eight mutants, cross checked against the fixtures
+- Lesson 30: Build the capstone suite (30-build-the-capstone-suite/): The full battery assembled: every gate green, 8 of 8 mutants killed
+- Lesson 31: Evaluate and harden (31-evaluate-and-harden/): The gate table, and the outcome only harness measured at 4 of 8
+- Lesson 32: Ship it: document, demo, and showcase your suite (32-ship-it/): A checklist that runs: completeness, a regenerated scorecard, three demos
+
+## Key files
+
+- README.md: course landing page and lesson table
+- agent/: the agent under test (lead_agent.py), the seeded stand-in (standin.py), and its written contract (README.md)
+- fixtures/: scenarios (24), safety (12), regression (10), capability (6), golden trajectories (6), and the budgets contract
+- DESIGN.md: the design this repo was built to, including the capstone gates
+- RESEARCH.md: the competitor scan the design answers
+- PROGRESS.md: the learner checklist
+- 29-capstone-spec/capstone/gates.json: the capstone gates and the eight mutants, fixed in advance

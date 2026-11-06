@@ -1,0 +1,15 @@
+# Testing AI Agents: requirements
+#
+# This course needs no third party packages. The agent under
+# test, the fixtures, every assertion style, the seeded
+# stand-in, the statistics, and the capstone suite all run on
+# the Python 3.11+ standard library alone, offline, because
+# the course's promise is that every number is reproducible
+# by running the lesson's code, and that promise should not
+# depend on a package index being reachable.
+#
+# Optional extras, not installed by this file, named with
+# their check dates in RESEARCH.md and Lesson 26: promptfoo,
+# DeepEval, RAGAS, and LangSmith, for learners who want to
+# compare this course's deterministic harness with the
+# framework ecosystem after the core ideas are in place.
