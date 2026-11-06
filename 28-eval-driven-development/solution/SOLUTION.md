@@ -1,0 +1,3 @@
+# Solution: Eval driven development
+
+For cap06: the behaviour is that an explicit refusal of a call must suppress booking intent even when the word call appears. The smallest change is a negation check in the parser: if a do not want, no, or never pattern governs the booking phrase in the same sentence, booking intent is false. For cap02: the behaviour is that booking intent and timeline in Spanish (reservar, llamada, esta semana) signal like their English forms; the smallest change is adding the Spanish intent and timeline vocabulary to the parser's tables. Either is a legitimate pick; the loop cares that the statement is one sentence and the change is the smallest that could earn it.
