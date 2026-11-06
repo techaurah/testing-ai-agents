@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="460" viewBox="0 0 1180 460">
+<rect width="1180" height="460" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">The deterministic twin pattern</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Exact tests need a system that behaves identically on identical inputs</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="40" y="160" width="250" height="90" rx="12" fill="#E0F2FE"/>
+<text x="165.0" y="201.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">The real agent</text>
+<text x="165.0" y="225.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">model based, wobbles</text>
+<rect x="340" y="160" width="250" height="90" rx="12" fill="#0B1F4A"/>
+<text x="465.0" y="201.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">The twin</text>
+<text x="465.0" y="225.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">same contract, deterministic</text>
+<rect x="640" y="160" width="230" height="90" rx="12" fill="#FEF3C7"/>
+<text x="755.0" y="201.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Fixtures</text>
+<text x="755.0" y="225.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#7C5A03">lead, turns, clock</text>
+<rect x="920" y="160" width="220" height="90" rx="12" fill="#0B1F4A"/>
+<text x="1030.0" y="201.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Exact tests</text>
+<text x="1030.0" y="225.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">byte identical replays</text>
+<line x1="290" y1="205" x2="340" y2="205" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="590" y1="205" x2="640" y2="205" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="870" y1="205" x2="920" y2="205" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<text x="40" y="320" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Three rules: fresh environment per case, every input is data, the twin stays faithful to the contract.</text>
+<text x="40" y="350" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Measured in Lesson 03: 46 of 46 gated cases replay byte identically in fresh environments.</text>
+</svg>

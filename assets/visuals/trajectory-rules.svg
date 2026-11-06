@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="500" viewBox="0 0 1180 500">
+<rect width="1180" height="500" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">Trajectory assertions</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">The outcome can be right while the path is wrong; grade the path</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="40" y="170" width="180" height="80" rx="12" fill="#0B1F4A"/>
+<text x="130.0" y="206.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">capture_lead</text>
+<text x="130.0" y="230.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">always first (T1)</text>
+<rect x="250" y="170" width="180" height="80" rx="12" fill="#0B1F4A"/>
+<text x="340.0" y="206.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">score_lead</text>
+<text x="340.0" y="230.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">before side effects (T2)</text>
+<rect x="460" y="170" width="200" height="80" rx="12" fill="#E0F2FE"/>
+<text x="560.0" y="206.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">calendar_check</text>
+<text x="560.0" y="230.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">before any booking (T3)</text>
+<rect x="690" y="170" width="200" height="80" rx="12" fill="#E0F2FE"/>
+<text x="790.0" y="206.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">book_appointment</text>
+<text x="790.0" y="230.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">at most once (T4)</text>
+<rect x="920" y="170" width="220" height="80" rx="12" fill="#FEF3C7"/>
+<text x="1030.0" y="206.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">escalate</text>
+<text x="1030.0" y="230.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#7C5A03">then only replies (T5)</text>
+<line x1="220" y1="210" x2="250" y2="210" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="430" y1="210" x2="460" y2="210" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="660" y1="210" x2="690" y2="210" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="890" y1="210" x2="920" y2="210" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<text x="40" y="330" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Lesson 08: 0 violations over 46 gated cases, and 3 hand built bad traces each caught by its own rule.</text>
+<text x="40" y="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Rules forbid bad orderings; they do not script one exact sequence. Goldens do that, for a few conversations.</text>
+</svg>

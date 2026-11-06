@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="480" viewBox="0 0 1180 480">
+<rect width="1180" height="480" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">Why agent testing is different</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Four differences, each measured in Lesson 01</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="40" y="140" width="520" height="90" rx="12" fill="#0B1F4A"/>
+<text x="300.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">The clock is an input</text>
+<text x="300.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">same message: BOOKED Monday, QUALIFIED Saturday</text>
+<rect x="620" y="140" width="520" height="90" rx="12" fill="#E0F2FE"/>
+<text x="880.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Outcomes live in state</text>
+<text x="880.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">CRM, calendar, outbox: one run changes three stores</text>
+<rect x="40" y="290" width="520" height="90" rx="12" fill="#E0F2FE"/>
+<text x="300.0" y="331.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Many paths, one ending</text>
+<text x="300.0" y="355.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">5 distinct tool paths across 24 scenarios</text>
+<rect x="620" y="290" width="520" height="90" rx="12" fill="#0B1F4A"/>
+<text x="880.0" y="331.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Boundaries are unstable</text>
+<text x="880.0" y="355.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">s03 passes 19 of 30 stand-in trials, s01 passes 28</text>
+<text x="40" y="440" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Classical tests compare a return value. Agent tests grade outcomes, paths, state, and stability.</text>
+</svg>

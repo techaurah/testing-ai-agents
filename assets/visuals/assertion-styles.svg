@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="480" viewBox="0 0 1180 480">
+<rect width="1180" height="480" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">Assertion styles: a ladder of coupling</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Each style survives some changes and catches others; suites layer them</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="40" y="150" width="240" height="90" rx="12" fill="#E0F2FE"/>
+<text x="160.0" y="191.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Outcome</text>
+<text x="160.0" y="215.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">band, stage: sees endings</text>
+<rect x="320" y="150" width="240" height="90" rx="12" fill="#0B1F4A"/>
+<text x="440.0" y="191.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Structural</text>
+<text x="440.0" y="215.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">shape: catches contract drift</text>
+<rect x="600" y="150" width="240" height="90" rx="12" fill="#0B1F4A"/>
+<text x="720.0" y="191.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Trajectory</text>
+<text x="720.0" y="215.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">the path: order rules</text>
+<rect x="880" y="150" width="260" height="90" rx="12" fill="#FEF3C7"/>
+<text x="1010.0" y="191.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Exact</text>
+<text x="1010.0" y="215.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#7C5A03">everything: goldens only</text>
+<line x1="280" y1="195" x2="320" y2="195" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="560" y1="195" x2="600" y2="195" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="840" y1="195" x2="880" y2="195" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<text x="40" y="300" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Lesson 06 measures the table: a courtesy suffix defeats only exact; a band flip defeats only outcome;</text>
+<text x="40" y="330" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">a dropped trace field defeats only structural. No style is best; each has a job.</text>
+</svg>

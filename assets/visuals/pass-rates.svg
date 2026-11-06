@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="480" viewBox="0 0 1180 480">
+<rect width="1180" height="480" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">pass@k and pass^k: two honest rates</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Same trials, different questions; choosing the rate is choosing the claim</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="40" y="160" width="500" height="110" rx="12" fill="#E0F2FE"/>
+<text x="290.0" y="211.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">pass@k: at least one of k passes</text>
+<text x="290.0" y="235.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">for assistants with a human picking the good attempt</text>
+<rect x="640" y="160" width="500" height="110" rx="12" fill="#0B1F4A"/>
+<text x="890.0" y="211.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">pass^k: all k trials pass</text>
+<text x="890.0" y="235.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">for agents acting alone, where every attempt ships</text>
+<text x="40" y="330" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Measured on s03 (p = 0.475): pass@3 is 0.8553 while pass^3 is 0.1072.</text>
+<text x="40" y="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">On s01 (p = 0.825): pass@5 is 0.9998 while pass^5 is 0.3822.</text>
+</svg>
