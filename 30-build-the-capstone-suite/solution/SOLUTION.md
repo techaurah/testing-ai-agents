@@ -1,0 +1,3 @@
+# Solution: Build the capstone suite
+
+A killable ninth: `nurture_threshold` raised to 65 re bands the NURTURE population and dies to outcome mismatches on the boundary cases. A genuinely hard survivor is a mutant that changes only reply wording inside the contract (for example swapping the qualified template's second sentence for a synonym): outcome, trajectory, content, budgets, state, and goldens all still pass, because the golden for that kind is the only exact wording check and it covers six conversations, not every kind. The killing check is a golden or a template assertion for the uncovered kinds, which loops the exercise back to Lesson 09's coverage question: every kind exercised is not the same as every kind pinned.
